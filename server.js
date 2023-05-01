@@ -19,6 +19,8 @@ app.use('/assignment',assignmentRoute);
 app.use('/teacherProfile',profileRoute);
 app.use('/qpaper',qpaperRoute);
 app.use('/notes',notesRoute);
-
+app.get('/',(req,res)=>{
+    res.send('Yooo im working!!!')
+})
 
 app.listen(port,()=>{console.log(`Listening to port ${port} `)})
