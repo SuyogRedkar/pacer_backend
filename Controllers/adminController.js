@@ -31,5 +31,5 @@ exports.getTeacherImage=async(req,resp)=>{
     const data=await teacher.findById(req.params.id);
     console.log(data);
     const image_Path = data.imagepath;
-    resp.send(image_Path);
+    resp.send(data);
 }
